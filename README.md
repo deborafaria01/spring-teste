@@ -1,1 +1,1 @@
-# spring-teste
+# Aplicação didática com Spring Boot 3
