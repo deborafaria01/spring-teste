@@ -12,6 +12,8 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "usr_usuario")
 public class Usuario {
@@ -25,6 +27,7 @@ public class Usuario {
     private String nome;
 
     @Column(name = "usr_senha")
+    @JsonIgnore
     private String senha;
 
     @OneToMany(mappedBy = "usuario")
